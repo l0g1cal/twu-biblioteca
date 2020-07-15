@@ -45,8 +45,10 @@ public class Biblioteca {
         ArrayList<Item> books = new ArrayList<>();
         Book book1 = new Book("Head First Java", "Bert Bates", "2003");
         Book book2 = new Book("Complete Reference", "Java Author", "2001");
+        Book book3 = new Book("Java for Dummies", "Java Pro", "2005");
         books.add(book1);
         books.add(book2);
+        books.add(book3);
         return books;
     }
 
