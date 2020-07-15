@@ -62,9 +62,11 @@ public class Biblioteca {
         User user1 = new User("2015-001", "p@ssword", "Lucy", "lucy@biblioteca.com", "44549807", false);
         User user2 = new User("2015-002", "p@ssword", "Peter", "peter@biblioteca.com", "44657885", false);
         User user3 = new User("2014-001", "p@ssword", "Andy", "andy@biblioteca.com", "44528790", true);
+        User user4 = new User("2020-001", "ez", "Jay", "jay@biblioteca.com", "123456789", true);
         users.add(user1);
         users.add(user2);
         users.add(user3);
+        users.add(user4);
         return users;
     }
 }
