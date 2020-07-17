@@ -1,7 +1,5 @@
-import * as consts from "./constants.js";
+import * as dom from "./dom.js";
+import * as api from "./callServer.js";
+import setUpWelcome from "./setUpWelcome.js";
 
-export default function showWelcomeMessage() {
-  window.alert(consts.welcomeMessage);
-}
-
-showWelcomeMessage();
+setUpWelcome(dom, api);
