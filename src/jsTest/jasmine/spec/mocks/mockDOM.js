@@ -14,6 +14,10 @@ export function onClick(id, callBack) {
   callBacks[id] = callBack;
 }
 
+export function onLoad(callBack) {
+  callBacks["load"] = callBack;
+}
+
 export function hideModal() {}
 
 export function showModal(message = "") {
@@ -26,6 +30,10 @@ export function getClickCallback(id) {
 
 export async function click(id) {
   await callBacks[id]();
+}
+
+export async function load() {
+  await callBacks["load"]();
 }
 
 export function reset() {

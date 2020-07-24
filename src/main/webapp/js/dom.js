@@ -14,3 +14,7 @@ export function showModal(message = "") {
   document.getElementById("modal-message").innerText = message;
   document.getElementById("modal").classList.remove("modal-hide");
 }
+
+export function onLoad(callback) {
+  window.onload = callback;
+}
